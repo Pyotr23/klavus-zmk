@@ -9,6 +9,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <25 26>;
+            layers = <1>;
+            timeout-ms = <50>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <26 27>;
+            layers = <1>;
+            timeout-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
